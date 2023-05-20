@@ -1,0 +1,163 @@
+@use "components";
+@mixin section-display {
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+    padding: 3rem;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 4rem;
+    border-bottom: solid 1px #ddd;
+    .clogo {
+        width: 8rem;
+        height: 4rem;
+    }
+}
+.sec-home {
+    display: flex;
+    @include section-display();
+    align-items: center;
+    .home-cta {
+        flex: 1;
+        .cta-text {
+            color:components.$color-main;
+        }
+        .home-title {
+            width: 20rem;
+            font-size: 3rem;
+        }
+        .home-description {
+            width: 300px;
+        }
+    }
+    .home-img {
+        img {
+            border-radius: 20px;
+            height: 25rem;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.379);
+            margin-left: 2px;
+        }
+    }
+
+}
+.sec-features {
+    @include section-display();
+    .intro {
+        text-align: center;
+        h3 {
+            font-size: 1.9rem;
+        }
+        p {
+            font-size: 0.9rem;
+            color: #888;
+        }
+    }
+    .features {
+        display: flex;
+        gap: 2rem;
+        width: 60rem;
+        align-items: center;
+        .text {
+            padding: 2rem 0;
+            .feature {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .description {
+                    margin-left: 1rem;
+                    .description-title {
+                        font-size: 1.15rem;
+                    }
+                    .description-text {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .image {
+            img {
+                max-width: 40rem;
+                height: 20rem;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.371);
+            }
+        }
+    }
+}
+.sec-benefits {
+    @extend .sec-features, .intro;
+}
+.sec-kpis {
+    width: 100%;
+    background-color: components.$color-main;
+    color: white;
+    padding: 4rem;
+    .kpi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .number-k{
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .desc {
+            font-size: 0.9rem;
+            color: rgba(226, 219, 219, 0.725);
+        }
+    }
+}
+.sec-onboarding {
+    @extend .sec-features, .intro;
+    .steps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .step-separator {
+            flex: 1;
+        }
+    }
+}
+.sec-footer-cta {
+    background-color: components.$color-footer;
+    padding: 5rem;
+    background-image: url("../assets/img/tierra.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    .footer-cta {
+        width: 30%;
+        .cta-title {
+            font-size: 2rem;
+        }
+        .cta-description {
+            font-size: 1rem;
+        }
+    }
+}
+@media (max-with: 768px) {
+    .sec-onboarding {
+        .steps {
+            flex-direction: column;
+            .icon-desc {
+                .title {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .sec-footer-cta {
+        background-image: none;
+        .footer-cta {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

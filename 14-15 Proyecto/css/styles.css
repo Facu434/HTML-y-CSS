@@ -1,0 +1,264 @@
+.btn-main, .btn-main-s {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #0075FF;
+  color: white;
+  border: none;
+  border: solid 1px #0075FF;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: white;
+  color: #0075FF;
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  color: #888;
+}
+.btn-sec-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  font-size: 0.75rem;
+  list-style: none;
+  display: inline;
+  margin-right: 2rem;
+}
+.main-menu li a {
+  color: black;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+}
+
+.icon-sm i {
+  font-size: 1.25rem;
+  padding: 0.4rem 0.65rem;
+  color: #0075FF;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.244);
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+}
+.feature a {
+  color: #0075FF;
+  text-decoration: none;
+}
+.feature a:hover {
+  text-decoration: underline;
+}
+.feature .icon {
+  color: #0075FF;
+  font-size: 7.5rem;
+  text-align: center;
+}
+.feature .description .title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.feature .description .text {
+  color: #888;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+.feature .cta {
+  margin-top: 0.5rem;
+  color: #0075FF;
+  font-weight: 600;
+  text-align: center;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-desc .icon {
+  color: #0075FF;
+  font-size: 10rem;
+  padding: 0;
+}
+.icon-desc .title {
+  margin-top: -2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+  border-bottom: solid 1px #ddd;
+}
+.nav .clogo {
+  width: 8rem;
+  height: 4rem;
+}
+
+.sec-home {
+  display: flex;
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+  align-items: center;
+}
+.sec-home .home-cta {
+  flex: 1;
+}
+.sec-home .home-cta .cta-text {
+  color: #0075FF;
+}
+.sec-home .home-cta .home-title {
+  width: 20rem;
+  font-size: 3rem;
+}
+.sec-home .home-cta .home-description {
+  width: 300px;
+}
+.sec-home .home-img img {
+  border-radius: 20px;
+  height: 25rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.379);
+  margin-left: 2px;
+}
+
+.sec-features, .sec-onboarding, .sec-benefits {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+}
+.sec-features .intro, .sec-features .sec-onboarding, .sec-onboarding .intro, .sec-onboarding .sec-onboarding, .sec-features .sec-benefits, .sec-onboarding .sec-benefits, .sec-benefits .intro, .sec-benefits .sec-onboarding, .sec-benefits .sec-benefits {
+  text-align: center;
+}
+.sec-features .intro h3, .sec-features .sec-onboarding h3, .sec-onboarding .intro h3, .sec-onboarding .sec-onboarding h3, .sec-features .sec-benefits h3, .sec-onboarding .sec-benefits h3, .sec-benefits .intro h3, .sec-benefits .sec-onboarding h3, .sec-benefits .sec-benefits h3 {
+  font-size: 1.9rem;
+}
+.sec-features .intro p, .sec-features .sec-onboarding p, .sec-onboarding .intro p, .sec-onboarding .sec-onboarding p, .sec-features .sec-benefits p, .sec-onboarding .sec-benefits p, .sec-benefits .intro p, .sec-benefits .sec-onboarding p, .sec-benefits .sec-benefits p {
+  font-size: 0.9rem;
+  color: #888;
+}
+.sec-features .features, .sec-onboarding .features, .sec-benefits .features {
+  display: flex;
+  gap: 2rem;
+  width: 60rem;
+  align-items: center;
+}
+.sec-features .features .text, .sec-onboarding .features .text, .sec-benefits .features .text {
+  padding: 2rem 0;
+}
+.sec-features .features .text .feature, .sec-onboarding .features .text .feature, .sec-benefits .features .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sec-features .features .text .feature .description, .sec-onboarding .features .text .feature .description, .sec-benefits .features .text .feature .description {
+  margin-left: 1rem;
+}
+.sec-features .features .text .feature .description .description-title, .sec-onboarding .features .text .feature .description .description-title, .sec-benefits .features .text .feature .description .description-title {
+  font-size: 1.15rem;
+}
+.sec-features .features .text .feature .description .description-text, .sec-onboarding .features .text .feature .description .description-text, .sec-benefits .features .text .feature .description .description-text {
+  font-size: 1rem;
+}
+.sec-features .features .image img, .sec-onboarding .features .image img, .sec-benefits .features .image img {
+  max-width: 40rem;
+  height: 20rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.371);
+}
+
+.sec-kpis {
+  width: 100%;
+  background-color: #0075FF;
+  color: white;
+  padding: 4rem;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .kpi .number-k {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.sec-kpis .kpi .desc {
+  font-size: 0.9rem;
+  color: rgba(226, 219, 219, 0.725);
+}
+
+.sec-onboarding .steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-onboarding .steps .step-separator {
+  flex: 1;
+}
+
+.sec-footer-cta {
+  background-color: #a7bddd;
+  padding: 5rem;
+  background-image: url("../assets/img/tierra.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100%;
+}
+.sec-footer-cta .footer-cta {
+  width: 30%;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 1rem;
+}
+
+@media (max-with: 768px) {
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-onboarding .steps .icon-desc .title {
+    text-align: center;
+  }
+  .sec-footer-cta {
+    background-image: none;
+  }
+  .sec-footer-cta .footer-cta {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
